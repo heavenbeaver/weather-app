@@ -3,8 +3,6 @@ import React, { useState } from "react";
 export default function SearchBar({onSearch}) {
     const [city, setCity] = useState('');
     
-
-    // изменяем состояние и передаем то что вводит пользователь
     const handleChange = (event) => {
         setCity(event.target.value);
     };
@@ -12,17 +10,16 @@ export default function SearchBar({onSearch}) {
     const handleSubmit = (event) => {
         event.preventDefault();
         onSearch(city);
+        setCity('');
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="search__form">
             <input className="weather__input" type="text"
             value={city}
             onChange={handleChange}
-            placeholder="Введите город" />
-            <br />
-            <br />
-            <button type="submit">Узнать погоду</button>
+            placeholder="Введите название города" />
+            <button type="submit">Поиск</button>
         </form>
     );
 }
