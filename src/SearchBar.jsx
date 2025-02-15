@@ -19,7 +19,7 @@ export default function SearchBar({onSearch}) {
             value={city}
             onChange={handleChange}
             placeholder="Введите название города" />
-            <button type="submit">Поиск</button>
+            <button type="submit">Узнать погоду</button>
         </form>
     );
 }

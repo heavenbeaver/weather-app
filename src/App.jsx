@@ -23,7 +23,7 @@ function App() {
       console.log(weatherResponse.data);
 
       const forecastResponse = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric&lang=ru`);
-      setForecastData(forecastResponse.data.list.slice(0, 5));
+      setForecastData(forecastResponse.data.list);
       console.log(forecastResponse.data.list);
 
     } catch (error) {
@@ -38,7 +38,7 @@ function App() {
           <nav>
             <div className="logo">
               <img className='nav__logo' src={logo} alt="" />
-              <p className='logo__text'>Weather React App</p>
+              <p className='logo__text'>Погода React JS</p>
             </div>
             <div className="search">
               <SearchBar onSearch={fetchWeather} />

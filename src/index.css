@@ -5,8 +5,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,7 +16,7 @@
 
 button {
   background-color: #447ef3!important;
-  padding: .5rem 1rem;
+  padding: .4rem 1rem;
   border-radius: .5rem;
   border: 1px solid transparent;
   transition: .3s ease;
@@ -36,15 +36,13 @@ button:hover {
   a:hover {
     color: #747bff;
   }
-  button {
-    background-color: #f3f3f3;
-  }
+
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     color: #ffffff;
-    background-color: #000000;
+    background-color: #242424;
   }
 
   a:hover {
@@ -54,4 +52,4 @@ button:hover {
   button {
     background-color: #f3f3f3;
   }
-} */
+}

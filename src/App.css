@@ -118,7 +118,6 @@ nav {
   color: var(--color-second);
 }
 
-
 @keyframes apear {
   from {
     top: -20px;
@@ -140,7 +139,6 @@ nav {
 .temp__wrapper p {
   font-size: 3rem;
 }
-
 
 .weather__city {
   color: var(--color-second);
@@ -172,18 +170,19 @@ nav {
 .forecast__day {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: #4794ff46;
-  border-radius: 20px;
-  min-width: 150px;
+  border-radius: 8px;
+  min-width: 13rem;
   max-width: 150px;
-  height: 200px;
+  height: 16rem;
   padding: 1rem;
 }
 
-@media (max-width: 320px) {
-  .weather__card {
-      width: 80%;
-    }
-}
+
+/* @media (min-width: 320px) and (max-width: 479px) {
+  .container {
+    max-width: 300px;
+  }
+} */
