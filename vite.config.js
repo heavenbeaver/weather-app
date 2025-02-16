@@ -8,4 +8,5 @@ export default defineConfig({
   //   host: true,  // Делаем сервер доступным в локальной сети
   // },
   plugins: [react()],
+  base: '/https://github.com/heavenbeaver/weather-app/'
 })
