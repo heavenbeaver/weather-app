@@ -1,16 +1,17 @@
 @import url(./reset.css);
+@import url(./media.css);
 
 :root {
   --color-second: #939CB0;
 }
 
 .container {
-  width: 1200px;
+  width: 1400px;
   margin: 0 auto;
 }
 
 header {
-  padding: 1rem 0;
+  padding: 2rem 0 1rem 0;
 }
 
 nav {
@@ -33,15 +34,30 @@ nav {
 }
 
 .weather__input {
-  padding: 1rem 1rem;
+  padding: 1rem .5rem;
   border: none;
   border-bottom: 2px solid black;
   transition: .3s ease;
   font-size: 1rem;
-  border-radius: 0;
+  border-radius: 0 !important;
+  width: fit-content !important;
+  text-rendering: optimizeSpeed;
+  text-align: center;
+
 }
 .weather__input:focus {
   outline: none;
+}
+.search__form button {
+  display: block;
+  min-width: fit-content !important;
+  background-color: #447ef3!important;
+  padding: .4rem .5rem;
+  border-radius: .5rem;
+  border: 1px solid transparent;
+  transition: .3s ease;
+  color: #ffffff !important;
+  display: none;
 }
 
 .weather__wrapper {
@@ -55,6 +71,12 @@ nav {
   font-weight: 500;
   color: #4793FF;
   display: block;
+}
+
+.today {
+  color: #242424;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .weather__card {
@@ -113,6 +135,11 @@ nav {
   width: 2.5rem;
   padding: 10px;
 }
+.desc__name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 
 .desc__title {
   color: var(--color-second);
@@ -130,7 +157,6 @@ nav {
 }
 
 .temp__wrapper {
-  /* padding: 1rem; */
   display: flex;
   gap: .5rem;
   justify-content: center;
@@ -174,15 +200,39 @@ nav {
   align-items: center;
   background-color: #4794ff46;
   border-radius: 8px;
-  min-width: 13rem;
-  max-width: 150px;
-  height: 16rem;
+  width: 30rem;
+  height: auto;
   padding: 1rem;
 }
+.forecast__date__day {
+  display: block;
+  margin-right: auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.forecast__date__number {
+  display: block;
+  margin-right: auto;
+  color: #939CB0;
 
-
-/* @media (min-width: 320px) and (max-width: 479px) {
-  .container {
-    max-width: 300px;
-  }
-} */
+}
+.forecast__day img {
+  margin-right: auto;
+  width: 5rem;
+}
+.max__temp {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-right: auto;
+}
+.min__temp {
+  color: #939CB0;
+  margin-right: auto;
+}
+.day__description {
+  color: #939CB0;
+  text-align: left;
+  display: block;
+  margin-right: auto;
+  font-size: .9rem;
+}

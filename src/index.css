@@ -1,32 +1,31 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
 :root {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  /* color: rgba(255, 255, 255, 0.87); */
-  /* background-color: #242424; */
-
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  --card-bg: #4F4F4F;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-button {
-  background-color: #447ef3!important;
-  padding: .4rem 1rem;
-  border-radius: .5rem;
-  border: 1px solid transparent;
-  transition: .3s ease;
-  color: #ffffff !important;
-}
-button:hover {
-  box-shadow: 0 0 10px 0 #6699ff;
-  cursor: pointer;
+html, body {
+  min-height: 100vh !important;
+  width: 100%;
+  height: 100% !important;
 }
 
+#root {
+  min-height: 100vh;
+  display: flex !important;
+  flex-direction: column;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -45,6 +44,18 @@ button:hover {
     background-color: #242424;
   }
 
+  #root {
+    background: linear-gradient(#0D1117, #242424);
+  }
+
+  body {
+    background: linear-gradient(#0D1117, #242424) !important;
+  }
+
+  html {
+    background-color: #0D1117 !important;
+  }
+
   a:hover {
     color: #747bff;
   }
@@ -52,4 +63,42 @@ button:hover {
   button {
     background-color: #f3f3f3;
   }
+
+  .weather__input {
+    border-color: var(--card-bg) !important;
+  }
+
+  .description__card {
+    background-color: var(--card-bg);
+    box-shadow: 0 0 10px 0 var(--card-bg) !important;
+  }
+
+  .desc__item img {
+    background-color: #ffffff;
+    box-shadow: none !important;
+  }
+
+  .weather__card {
+    background-color: var(--card-bg);
+    box-shadow: 0 0 10px 0 var(--card-bg) !important;
+  }
+
+  .today {
+    color: #ffffff !important;
+  }
+
+  .forecast__card {
+    background-color: var(--card-bg);
+    box-shadow: 0 0 10px 0 var(--card-bg) !important;
+  }
+
+  .forecast__day {
+    background-color: #2E3035 !important;
+  }
+
+  .description__card {
+    background-position-x: 400px !important;
+  }
+
+  
 }

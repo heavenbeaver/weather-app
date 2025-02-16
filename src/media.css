@@ -1,0 +1,267 @@
+@media (min-width: 1400px){
+    .container {
+        max-width: 1300px !important;
+    }
+}
+
+@media (min-width: 1080px) and (max-width: 1400px) {
+    .container {
+        max-width: 1050px;
+    }
+
+    .description__card {
+        background-image: none !important;
+    }
+
+    .weather__card {
+        width: 50% !important;
+    }
+
+    .forecast__day {
+        min-width: 10rem !important;
+    }
+
+    .weather__input {
+        width: 100% !important;
+    }
+
+    .search__form {
+        width: 100% !important;
+        /* background-color: aliceblue; */
+    }
+
+    /* .search__form button {
+        width: 100% !important;
+    } */
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+    .container {
+        max-width: 748px;
+    }
+
+    .description__card {
+        background-image: none !important;
+    }
+
+    .weather__card {
+        width: 62% !important;
+    }
+
+    .forecast__day {
+       min-width: 10rem !important;
+    }
+
+    .weather__input {
+        width: 100%;
+    }
+
+    .search__form button {}
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+        :root {
+            color-scheme: light dark;
+        }
+    
+        .container {
+            max-width: 450px;
+        }
+    
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .search {
+            width: 100%;
+        }
+    
+        .search__form {
+            flex-direction: column;
+            width: 100%;
+        }
+    
+        .weather__input {
+            min-width: 100% !important;
+        }
+    
+        button {
+            font-size: 1rem !important;
+            padding: .5rem 1rem;
+        }
+    
+        .logo {
+            width: 100%;
+        }
+    
+        .weather__card {
+            width: 100% !important;
+        }
+    
+        .weather__wrapper {
+            flex-direction: column;
+            gap: 1rem !important;
+        }
+    
+        .description__card {
+            background-image: none !important;
+            background-color: transparent;
+            box-shadow: none !important;
+            padding: 0 !important;
+            margin: 0;
+        }
+    
+        .desc__list {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    
+        .desc__item {
+            flex-direction: column;
+            padding: 1rem;
+            border-radius: 20px;
+            background-color: #4F4F4F;
+            width: 100%;
+        }
+    
+        .desc__name>p {
+            font-size: 1.2rem !important;
+        }
+    
+        .desc__item>p {
+            font-size: 1.2rem;
+        }
+    
+        .forecast__card {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .forecast__day {
+            width: 100% !important;
+        }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+
+    :root {
+        color-scheme: light dark;
+    }
+
+    .container {
+        max-width: 350px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .search__form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .weather__input {
+        min-width: 100% !important;
+    }
+
+    button {
+        font-size: 1rem !important;
+        padding: .5rem 1rem;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .weather__card {
+        width: 100% !important;
+    }
+
+    .weather__wrapper {
+        flex-direction: column;
+        gap: 1rem !important;
+    }
+
+    .description__card {
+        background-image: none !important;
+        background-color: transparent;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0;
+    }
+
+    .desc__list {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .desc__item {
+        flex-direction: column;
+        padding: 1rem;
+        border-radius: 20px;
+        background-color: #4F4F4F; 
+        width: 100%;
+    }
+
+    .desc__name > p {
+        font-size: 1.2rem !important;
+    }
+
+    .desc__item > p {
+        font-size: 1.2rem;
+    }
+
+    .forecast__card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .forecast__day {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 300px;
+    }
+}
+
+@media (prefers-color-scheme: light) and (max-width: 768px){
+    .desc__item {
+        flex-direction: column;
+        padding: 1rem;
+        border-radius: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 0 6px 0 rgb(196, 196, 196);
+        width: 100%;
+    }
+}
+
+@media (prefers-color-scheme: dark) and (max-width: 768px){
+    .desc__item {
+        flex-direction: column;
+        padding: 1rem;
+        border-radius: 20px;
+        background-color: #4F4F4F;
+        box-shadow: 0 0 10px 0 var(--card-bg) !important;
+        width: 100%;
+    }
+}
