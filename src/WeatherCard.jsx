@@ -17,7 +17,7 @@ export default function WeatherCard({weatherData}) {
                     <p className="today">Сегодня</p>
                 </div>
                 <div>
-                    <p className="weather__description">{weatherData.weather[0].    description}</p>
+                    <p className="weather__description">{weatherData.weather[0].description}</p>
                     <p className="weather__city">Город: {weatherData.name}, {weatherData.sys.country}</p>
 
                 </div>

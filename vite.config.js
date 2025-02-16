@@ -3,10 +3,26 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  // server: {
-  //   https: true, // Включаем HTTPS
-  //   host: true,  // Делаем сервер доступным в локальной сети
-  // },
   plugins: [react()],
-  base: '/https://github.com/heavenbeaver/weather-app/'
+  base: '/weather-app/',
+
+  build: {
+    outDir: 'dist',
+
+    // Настройки для оптимизации
+    rollupOptions: {
+      output: {
+        // Указываем путь для всех статичных файлов
+        assetFileNames: 'assets/[name]-[hash][extname]',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
+      }
+    }
+  },
+  assetsInclude: ['**/*.png', '**/*.jpg', '**/*.svg'],  // Включаем обработку картинок
+
+  // Для разработки с локальной папкой
+  server: {
+    open: true, // Открывать браузер автоматически при запуске dev-сервера
+  }
 })

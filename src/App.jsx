@@ -5,7 +5,7 @@ import SearchBar from './SearchBar'
 import WeatherCard from './WeatherCard'
 import Forecast from './Forecast'
 import './App.css'
-import logo from './assets/Header logo.svg'
+import logo from '../public/logo.svg'
 
 // получаем данные и убираем повторяющиеся дни
 const processForecastData = (list) => {

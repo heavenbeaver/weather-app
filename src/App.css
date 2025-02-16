@@ -112,7 +112,7 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  background-image: url(./src/assets/Cloud\ image.png);
+  background-image: url(@/assets/cloud.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
