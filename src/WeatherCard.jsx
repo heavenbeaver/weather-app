@@ -40,7 +40,7 @@ export default function WeatherCard({weatherData}) {
                             <img src={pressure} alt="" />
                             <p className="desc__title">Давление</p>
                         </div>
-                        <p>{weatherData.main.pressure} мм ртутного столба</p>
+                        <p>{Math.round(weatherData.main.pressure * 0.75006)} мм ртутного столба</p>
                     </li>
 
                     <li className="desc__item">
