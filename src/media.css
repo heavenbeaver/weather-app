@@ -20,6 +20,9 @@
     .forecast__day {
         min-width: 10rem !important;
     }
+    .forecast__card {
+        overflow-x: scroll;
+    }
 
     .weather__input {
         width: 100% !important;
@@ -27,12 +30,7 @@
 
     .search__form {
         width: 100% !important;
-        /* background-color: aliceblue; */
     }
-
-    /* .search__form button {
-        width: 100% !important;
-    } */
 }
 
 @media (min-width: 768px) and (max-width: 1080px) {
@@ -56,10 +54,12 @@
         width: 100%;
     }
 
-    .search__form button {}
+    .forecast__card {
+        overflow-x: scroll;
+    }
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 768px) {
         :root {
             color-scheme: light dark;
         }

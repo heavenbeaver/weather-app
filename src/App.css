@@ -112,7 +112,7 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  background-image: url(@/assets/cloud.png);
+  background-image: url(./assets/cloud.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -190,7 +190,6 @@ nav {
   margin-bottom: 2rem;
   display: flex;
   gap: 1rem;
-  overflow-x: scroll;
 }
 
 .forecast__day {
