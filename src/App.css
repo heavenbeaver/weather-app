@@ -31,6 +31,7 @@ nav {
 .search__form {
   display: flex;
   gap: 1rem;
+  position: relative;
 }
 
 .weather__input {
@@ -45,13 +46,15 @@ nav {
   text-align: center;
 
 }
+
 .weather__input:focus {
   outline: none;
 }
+
 .search__form button {
   display: block;
   min-width: fit-content !important;
-  background-color: #447ef3!important;
+  background-color: #447ef3 !important;
   padding: .4rem .5rem;
   border-radius: .5rem;
   border: 1px solid transparent;
@@ -92,6 +95,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .weather__card img {
@@ -116,6 +120,7 @@ nav {
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
+  z-index: 1;
 }
 
 .desc__list {
@@ -129,12 +134,14 @@ nav {
   gap: 1rem;
   align-items: center;
 }
+
 .desc__item img {
   box-shadow: 0 0 6px 0 rgb(196, 196, 196);
   border-radius: 50%;
   width: 2.5rem;
   padding: 10px;
 }
+
 .desc__name {
   display: flex;
   align-items: center;
@@ -150,6 +157,7 @@ nav {
     top: -20px;
     opacity: 0;
   }
+
   to {
     top: 0;
     opacity: 1;
@@ -162,6 +170,7 @@ nav {
   justify-content: center;
   align-items: center;
 }
+
 .temp__wrapper p {
   font-size: 3rem;
 }
@@ -203,35 +212,65 @@ nav {
   height: auto;
   padding: 1rem;
 }
+
 .forecast__date__day {
   display: block;
   margin-right: auto;
   font-size: 1.5rem;
   font-weight: 500;
 }
+
 .forecast__date__number {
   display: block;
   margin-right: auto;
   color: #939CB0;
 
 }
+
 .forecast__day img {
   margin-right: auto;
   width: 5rem;
 }
+
 .max__temp {
   font-size: 1.2rem;
   font-weight: 500;
   margin-right: auto;
 }
+
 .min__temp {
   color: #939CB0;
   margin-right: auto;
 }
+
 .day__description {
   color: #939CB0;
   text-align: left;
   display: block;
   margin-right: auto;
   font-size: .9rem;
+}
+
+.city__placeholder {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.city__list {
+  background-color: #242424;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  height: auto;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.city__list li {
+  color: #ffffff;
+  padding: .5rem 0;
+  cursor: pointer;
 }
