@@ -64,6 +64,8 @@ function App() {
   // получение погоды по геолокации
   useEffect(() => {
 
+    fetchWeather('Москва');
+
     navigator.permissions.query({ name: "geolocation" }).then((result) => {
       if (result.state === 'denied') {
         alert("Геолокация заблокирована. Разрешите доступ в настройках.", error);
